@@ -1,9 +1,9 @@
-FROM python:3.6-slim@sha256:357da12a7262fbb33149a11cc0f8af40553a0e41f8a0b1e7057ea0ae4ba55ec7
+FROM python:3.7-slim@sha256:589527a734f2a9e48b23cc4687848cb9503d0f8569fad68c3ad8b2ee9d1c50ff
 ADD my_script.py /
 RUN pip install flask
 CMD [ "python", "./my_script.py" ]
 
-FROM python:3.5-slim
+FROM python:3.7-slim
 
 WORKDIR /opt
 
