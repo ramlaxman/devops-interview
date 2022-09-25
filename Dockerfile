@@ -1,4 +1,4 @@
-FROM python:3.6-slim@sha256:357da12a7262fbb33149a11cc0f8af40553a0e41f8a0b1e7057ea0ae4ba55ec7
+FROM python:3.6-slim@sha256:28028f6c3ce569a6405909ca76e85469fbb85c9ee93acd2fe5fe13f5e5e2c412
 ADD my_script.py /
 RUN pip install flask
 CMD [ "python", "./my_script.py" ]
